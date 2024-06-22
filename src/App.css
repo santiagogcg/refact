@@ -6,11 +6,41 @@
 }
 
 .envoltura {
-  display: inline;
+  display: flex;
+  flex-direction: column;
+
 }
 
-.envoltura > div {
+.envoltura>div {
   display: inline-block;
+
+}
+
+.employees {
+  height: 20em;
+  overflow-y: scroll;
+  border: 1px, solid, black;
+  border-radius: .5em;
+
+  padding: 2%;
+}
+
+
+.employees div {
+  border: 1px, solid, black;
+  border-radius: .5em;
+
+  width: 30%;
+
+  margin: 0 auto;
+}
+
+.calculator {}
+
+footer {
+
+  color: grey;
+
 }
 
 .logo {
@@ -19,9 +49,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -30,6 +62,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
